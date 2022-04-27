@@ -153,6 +153,9 @@ class DescribePresentationPart(object):
         assert rId == "rId42"
         assert slide is slide_
 
+    def it_can_remove_a_slide(self):
+        pass
+
     def it_finds_the_slide_id_of_a_slide_part(self, slide_part_, related_part_):
         prs_elm = element(
             "p:presentation/p:sldIdLst/(p:sldId{r:id=a,id=256},p:sldId{r:id="

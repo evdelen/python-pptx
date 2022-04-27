@@ -27,9 +27,9 @@ class PresentationPart(XmlPart):
         rId = self.relate_to(slide_part, RT.SLIDE)
         return rId, slide_part.slide
 
-    def delete_slide(self, slide_id):
+    def remove_slide(self, slide_id):
         """
-        Delete a |Slide| object from the presentation as identified by `slide_id`.
+        Remove a |Slide| object from the presentation as identified by `slide_id`.
         """
         for sldId in self._element.sldIdLst:
             if sldId.id == slide_id:
